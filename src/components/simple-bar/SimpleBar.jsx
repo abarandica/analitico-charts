@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react'
-import {Bar, BarChart, CartesianGrid, Cell, Label, Tooltip, XAxis, YAxis} from "recharts";
+import {Bar, BarChart, Brush, CartesianGrid, Cell, Label, Tooltip, XAxis, YAxis} from "recharts";
 
 const COLORS = ['#7D93F7', '#A6DECF'];
 
@@ -26,7 +26,8 @@ class SimpleBar extends Component {
                 <YAxis/>
                 <CartesianGrid strokeDasharray="3 3" />
                 <Tooltip />
-                <Bar barSize={20} dataKey={this.state.dataKey} fill="#7583FF">
+                <Brush dataKey='name' height={30} stroke="#8884d8"/>
+                <Bar dataKey={this.state.dataKey} fill="#7583FF">
                     {
                         barData.map((entry, index) =>
                             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]}/>)

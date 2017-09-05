@@ -113,8 +113,8 @@ class App extends Component {
                     <h2>Dashboard</h2>
                 </div>
                 <div className="container">
-                    <p onClick={this.resetFilters}>Reset</p>
-                    <TwoLevelPie 
+                    <TwoLevelPie
+                        resetFilters={this.resetFilters}
                         pieClick={this.onPieClick}
                         parts={this.state.parts} 
                         subparts={this.state.subparts}

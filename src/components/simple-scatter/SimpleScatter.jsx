@@ -1029,9 +1029,6 @@ class SimpleScatter extends Component {
                 <Tooltip cursor={{ strokeDasharray: '3 3'}}/>
                 <Scatter name="Compliance Score" fill="#7D93F7"/>
                 <Scatter name="Milliman Score" data={data01} fill="#EF7E5C">
-                    {
-                        data01.map((entry, index) => <Cell fill={COLORS[index % COLORS.length]}/>)
-                    }
                 </Scatter>
             </ScatterChart>
         )

@@ -16,15 +16,31 @@ const data = [
     { name: 'G', uv: 3490, pv: 4300, amt: 2100 }
 ];
 const partsArray = [
-    { name: 'A', value: 400 },
-    { name: 'B', value: 300 },
-    { name: 'D', value: 200 }
+    {
+         name: 'A',
+         costs: [
+            { name: 'Diseases of the Genitourinary System ', value: 0 },
+            { name: 'Diseases of the Musculoskeletal System & Connective Tissue', value: 46747.54  },
+            { name: 'Diseases of the Skin & Subcutaneous Tissue ', value: 544 },
+            { name: 'Infectious & Parasitic Diseases   ', value: 656 }
+         ]
+    },
+    { 
+        name: 'B', 
+        costs: [
+            { name: 'Diseases of the Genitourinary System ', value: 0 },
+            { name: 'Diseases of the Musculoskeletal System & Connective Tissue', value: 46747.54  },
+            { name: 'Diseases of the Skin & Subcutaneous Tissue ', value: 544 },
+            { name: 'Infectious & Parasitic Diseases   ', value: 656 }
+        ]
+    },
+    { name: 'D', value: 255 }
 ];
 const subpartsArray = [
-    { name: 'A1', value: 100 },
-    { name: 'A2', value: 300 },
-    { name: 'B1', value: 100 },
-    { name: 'B2', value: 80 },
+    { name: 'Diseases of the Genitourinary System ', value: 686.56 },
+    { name: 'Diseases of the Musculoskeletal System & Connective Tissue', value: 46870.54  },
+    { name: 'Diseases of the Skin & Subcutaneous Tissue ', value: 100 },
+    { name: 'Infectious & Parasitic Diseases   ', value: 80 },
     { name: 'B3', value: 40 },
     { name: 'B4', value: 30 },
     { name: 'B5', value: 50 },
